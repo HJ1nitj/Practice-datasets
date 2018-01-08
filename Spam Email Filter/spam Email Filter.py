@@ -11,7 +11,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.feature_extraction.text import CountVectorizer
 ########################################################################
 #Reading a text-based dataset into pandas
-sms=pd.read_table('https://raw.githubusercontent.com/justmarkham/pycon-2016-tutorial/master/data/sms.tsv', header=None, names=['labels','message'])
+sms=pd.read_table('spam_data.csv')
 
 print sms.head()
 
