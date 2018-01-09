@@ -62,7 +62,7 @@ print output.shape
 
 #Now let's implement the correleation matrix algo to get the more insights about the feature selection
 
-#***********************CORRELATION MATRIX ALGORITHM (0.6) *********************
+#***********************CORRELATION MATRIX ALGORITHM (0.5) *********************
 app_data=glass_data.drop(['glass-type'], axis=1)
 data_comatrix=app_data.corr()
 data_comatrix.loc[:, :]=np.tril(data_comatrix, k=-1)
@@ -85,7 +85,7 @@ select=[i[1:] for i in result]
 
 #Since from correlation matrix algo we are getting Ca and RI to be removed
 #and from variance threshold we are getting we are getting only 4 features 
-#so let's remove Ca and RI, ID, Ba(As it is having very variation) from the dataset
+#so let's remove Ca and RI, Ba(As it is having very variation) from the dataset
 
 #********************splitting into training and testing data**************
 X=glass_data.drop(['Ca', 'RI', 'Ba' , 'glass-type'], axis=1)
