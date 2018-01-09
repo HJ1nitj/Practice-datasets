@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jan 09 18:53:02 2018
 
-@author: DELL
-"""
 
 #Importing the packages
 import pandas as pd
@@ -16,10 +12,8 @@ import seaborn as sns
 sns.set()
 
 #Loading the dataset
-header=["Id", "RI", "Na", "Mg", "Al", "Si", "K", "Ca", "Ba", "Fe", "glass-type"]
-glass_data=pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/glass/glass.data', names=header)
 
-glass_data.to_csv('glass_data.csv', index=False)
+glass_data=pd.read_csv('glass_data.csv')
 
 
 #features description
